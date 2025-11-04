@@ -1,11 +1,14 @@
 import logo from './GloboLogo.png';
+import { useNavigate } from 'react-router-dom';
+
 
 type Args = {
     subtitle: string
 }
 
 const Header = ({subtitle}: Args)=>{
-    return (
+  const nav = useNavigate();  
+  return (
     <header className="row mb-4">
       <div className="col-5">
         <img 
@@ -13,7 +16,7 @@ const Header = ({subtitle}: Args)=>{
             className="logo" 
             alt="logo"
             height="200px"
-            //onClick={() => nav("/")} 
+            onClick={() => nav("/")} 
         />
       </div>
       <div className="col-7 mt-5 subtitle">{subtitle}</div>
