@@ -26,7 +26,7 @@ const HouseEdit = () => {
             )}
             <HouseForm 
                 house = {data}
-                submitted = {(h) => updateHouseMutation.mutate(h)}
+                submitted = {(house) => updateHouseMutation.mutate(house)}
             />
         </>
     );

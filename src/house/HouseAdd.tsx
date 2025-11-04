@@ -21,7 +21,7 @@ const HouseAdd = () => {
             )}
             <HouseForm 
                 house = {house}
-                submitted = {(h) => addHouseMutation.mutate(h)}
+                submitted = {(house) => addHouseMutation.mutate(house)}
             />
         </>
     );
