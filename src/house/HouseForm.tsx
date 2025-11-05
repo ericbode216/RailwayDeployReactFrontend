@@ -29,6 +29,7 @@ const HouseForm =({house, submitted}: Args) =>{
         <label htmlFor="address">Address</label>
         <input
           type="text"
+          id="address"
           className="form-control"
           placeholder="Address"
           value={houseState.address}
@@ -41,6 +42,7 @@ const HouseForm =({house, submitted}: Args) =>{
         <label htmlFor="country">Country</label>
         <input
           type="text"
+          id="country"
           className="form-control"
           placeholder="Country"
           value={houseState.country}
@@ -52,6 +54,7 @@ const HouseForm =({house, submitted}: Args) =>{
       <div className="form-group mt-2">
         <label htmlFor="description">Description</label>
         <textarea
+          id="description"
           className="form-control"
           placeholder="Description"
           value={houseState.description}
@@ -63,6 +66,7 @@ const HouseForm =({house, submitted}: Args) =>{
       <div className="form-group mt-2">
         <label htmlFor="price">Price</label>
         <input
+          id="price"
           type="number"
           className="form-control"
           placeholder="Price"
